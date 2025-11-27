@@ -1,0 +1,20 @@
+
+** create webhook to process incoming messages
+** messages given via webhook
+** messages fed to llm
+** replies to webhook will be just a happy "http 200 ok" and json status:ok
+** replies from llm written to file output.txt
+
+
+invocation example:
+
+```
+curl -X 'POST' \
+  'http://127.0.0.1:8000/message' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "message": "tell me a joke"
+}'
+
+```
