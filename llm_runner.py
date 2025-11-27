@@ -64,5 +64,5 @@ class SimpleCallbackSink(FrameProcessor):
             await self.push_frame(frame)
 
         elif isinstance(frame, StartFrame):
-            #just pass it on, otherwise the think won't start up
+            #just pass it on, otherwise the pipecat won't start up
             await self.push_frame(frame)
